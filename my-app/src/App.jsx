@@ -11,7 +11,7 @@ function Logo() {
         alt="bear"
         width={30}
         height={30} />
-      <h6 className='font-bold underline text-white'>
+      <h6 className='font-bold text-white'>
         avvooturi
       </h6>
     </div>
@@ -39,7 +39,7 @@ function Title() {
 function About() {
   return (
     <div className='flex justify-center items-center pt-20'>
-      <div>
+      <div className='w-3/4 max-w-3xl mx-auto'>
         <h1 className='text-4xl text-white'>
           About Me
         </h1>
@@ -48,11 +48,11 @@ function About() {
         </h3>
       </div>
       <img
-        className='rounded-lg ml-20'
+        className='w-1/6 max-w-3xl mx-auto rounded-lg ml-20'
         src={logo}
         alt="bear"
-        width={225}
-        height={225}
+        width={300}
+        height={300}
       />
     </div>
   );
@@ -61,17 +61,21 @@ function About() {
 function Skills() {
   return (
     <div className='flex justify-center items-center pt-20'>
-      <div>
+      <div className='w-3/4 max-w-3xl mx-auto'>
         <h1 className='text-4xl text-white'>
-          Float
+          Skills
         </h1>
-        <h3 className='text-xl text-white mt-4 break-normal'>
-          I say everybody yell FreeRIQ
-        </h3>
+        <div className='mt-4'>
+          <img
+            src="https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=React&labelColor=black"
+            alt="React Badge"
+          />
+        </div>
       </div>
     </div>
   );
 }
+
 
 export default function App() {
   return (
@@ -80,6 +84,7 @@ export default function App() {
       <Title />
       <div className='border-t-4 border-indigo-500 border-8'></div>
       <About />
+      <div className='mt-20 border-t-4 border-indigo-500 border-8'></div>
       <Skills />
     </div>
   );
