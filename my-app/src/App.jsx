@@ -44,12 +44,21 @@ function About() {
   return (
     <>
     <div className='absolute inset-x-32 top-3/4 flex justify-center items-center'>
-      <h1 className='text-4xl text-white'>
-      About Me
-      </h1>
-      <h3 className='text-2xl text-white ml-20'>
-      Let's try this
-      </h3>
+      <div>
+        <h1 className='text-4xl text-white'>
+        About Me
+        </h1>
+        <h3 className='text-xl text-white mt-4 break-normal'>
+          When we pull up yeah on the toad, I keep clips with me so what do you kno? I had already knew they finna hate spanish language last week she nagged me this week I got new goals
+        </h3>
+      </div>
+      <img
+        className='rounded-lg ml-20'
+        src={logo}
+        alt="bear"
+        width={225}
+        height={225}
+      />
     </div>
     </>
   );
@@ -62,6 +71,7 @@ export default function App() {
       <Logo/>
       <Title/>
       <div className='absolute inset-x-0 top-2/3 border-t-4 border-indigo-500 border-8'></div>
+      <About/>
       <About/>
     </div>
     </>
