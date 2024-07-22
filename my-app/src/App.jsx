@@ -58,23 +58,64 @@ function About() {
   );
 }
 
+function Img(source, alt) {
+  return (
+    <>
+      <img
+        src={source}
+        alt={alt}
+      />
+    </>
+  );
+}
+
 function Skills() {
   return (
     <div className='flex justify-center items-center pt-20'>
-      <div className='w-3/4 max-w-3xl mx-auto'>
+      <div className='w-3/4 mx-auto'>
         <h1 className='text-4xl text-white'>
           Skills
         </h1>
         <div className='mt-4'>
-          <img
-            src="https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=React&labelColor=black"
-            alt="React Badge"
-          />
+          <h1 className='text-3xl text-white'>
+            Programming Languages
+          </h1>
+          <div className='flex space-x-4 mt-4'>
+            {Img("https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=React&labelColor=black", "React Badge")}
+            <Img/>
+            <Img/>
+            <Img/>
+          </div>
+        </div>
+        <div className='mt-4'>
+          <h1 className='text-3xl text-white'>
+            Programming Languages
+          </h1>
+          <div className='flex space-x-4 mt-4'>
+            <img
+              src="https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=React&labelColor=black"
+              alt="React Badge"
+            />
+            <img
+              src="https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=React&labelColor=black"
+              alt="React Badge"
+            />
+            <img
+              src="https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=React&labelColor=black"
+              alt="React Badge"
+            />
+            <img
+              src="https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=React&labelColor=black"
+              alt="React Badge"
+            />
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+
 
 
 export default function App() {
